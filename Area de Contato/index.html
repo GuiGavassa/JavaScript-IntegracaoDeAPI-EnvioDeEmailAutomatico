@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com a Equipe">
+    <meta name="author" content="Guilherme Gavassa de Siqueira">
+    <meta name="keywords" content="contato,contact,api">
+    <meta name="robots" content="index,all">
+    <title>Entre em Contato</title>
+    <script src="./js/index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("tjJz-XRBZ8dNS-DKX");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="container border mt-3 bg-light">
+        <div class="row">
+            <div class="col-md-6 p-5 bg-primary text-white">
+                <h1>Olá</h1>
+                <h4>
+                    Entre em contato conosco.
+                </h4>
+            </div>
+            <div class="col-md-6 py-3">
+                <h1>Formulário de Contato</h1>
+                <div class="form-group">
+                    <h5 for="name">Nome</h5>
+                    <input type="text" class="form-control" id="name" placeholder="Insira seu nome completo">
+                </div>
+                <div class="form-group">
+                    <h5 for="email">Email</h5>
+                    <input type="email" class="form-control" id="email" placeholder="Insira seu email">
+                </div>
+                <div class="form-group">
+                    <h5 for="telefone">Telefone</h5>
+                    <input type="tel" class="form-control" id="telefone" placeholder="Insira seu telefone">
+                </div>
+                <div class="form-group">
+                    <h5 for="mensagem">Mensagem</h5>
+                    <textarea id="mensagem" rows="3" class="form-control"></textarea>
+                </div>
+                <button class="btn btn-primary" onclick="sendMail()" >Enviar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
